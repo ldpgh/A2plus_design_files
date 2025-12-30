@@ -25,7 +25,7 @@ from a2p_importedPart_class import Proxy_importPart, ImportedPartViewProviderPro
 App.newDocument()
 doc=FreeCAD.activeDocument()
 
-dirName='C:/Users/lud/Desktop/DESKTOP_ROOMING/FreeCAD/A2P_HIER_PARAMETER/'
+dirName='./FreeCAD/A2P_HIER_PARAMETER/'
 a2p.importPartFromFile( doc, dirName+'hier_level_2.FCStd', instanceParameters={"ww":55} )
 
 
@@ -46,13 +46,13 @@ a2p_importedPart_class
 
 a2p.importPartFromFile(
   doc,
-  'C:/Users/lud/Desktop/DESKTOP_ROOMING/FreeCAD/A2P_HIER_PARAMETER/hier_level_2.FCStd',
+  './FreeCAD/A2P_HIER_PARAMETER/hier_level_2.FCStd',
   instanceParameters={"ww":11, "ll":11, "hh":11}
 )
 
 a2p.importPartFromFile(
   doc,
-  'C:/Users/lud/Desktop/DESKTOP_ROOMING/FreeCAD/A2P_HIER_PARAMETER/hier_level_2.FCStd',
+  './FreeCAD/A2P_HIER_PARAMETER/hier_level_2.FCStd',
   instanceParameters={"ww":11, "ll":22, "hh":33}
 )
 
@@ -99,3 +99,4 @@ doc = FreeCAD.activeDocument() or FreeCAD.newDocument()
 obj = doc.addObject("Part::FeaturePython", "MyPart")
 ProxyDemo(obj)
 doc.recompute()
+
